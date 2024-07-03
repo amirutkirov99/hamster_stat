@@ -213,7 +213,7 @@ class HamsterClient(Session):
         # print(self.my_Rank.get(""))
         prepared = []
         earn_on_hour = self.state['earnPassivePerHour']
-        max_price_limit = earn_on_hour * 5
+        max_price_limit = earn_on_hour * 1
         for upgrade in self.upgrades.get("upgradesForBuy"):
             if (
                 upgrade["level"] <= MAX_LEVEL
